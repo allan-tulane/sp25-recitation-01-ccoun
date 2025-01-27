@@ -18,7 +18,7 @@ jobs:
       uses: classroom-resources/autograding-python-grader@v1
       with:
         timeout: 10
-        setup-command: pip install pytest; pytest test_main.py
+        setup-command: pip install pytest; pip install tabulate; pytest test_main.py
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
       env:
